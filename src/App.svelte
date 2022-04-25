@@ -20,7 +20,9 @@ const loadCoins = async ()=>{
 loadCoins()
 
 const searchCoin = (value)=>{
-	console.log(value)
+	coins = coins.filter((coin)=> 
+	coin.name.toLowerCase().includes(value.toLowerCase())
+	)
 }
 </script>
 
