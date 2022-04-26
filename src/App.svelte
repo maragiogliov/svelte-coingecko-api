@@ -21,7 +21,8 @@ loadCoins()
 
 const searchCoin = (value)=>{
 	coins = coins.filter((coin)=> 
-	coin.name.toLowerCase().includes(value.toLowerCase())
+	coin.name.toLowerCase().includes(value.toLowerCase())||
+	coin.symbol.toLowerCase().includes(value.toLowerCase())
 	)
 }
 </script>
